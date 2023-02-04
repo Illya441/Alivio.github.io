@@ -547,6 +547,16 @@ margin-bottom: 10px;
  {
   color:#32CD32;
 }
+.nav_link:active,
+.nav_btn:active,
+.nav_btn2:active,
+.page__container_link:active,
+.story__container_link:active,
+.product__content_btn:active,
+.foote__conten_list:active
+ {
+  color:#32CD32;
+}
 /* ******************************media__min****************************** */
 @media (min-width: 1140px) {
   .nav {
