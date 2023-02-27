@@ -13,79 +13,42 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__site">
           <div class="header__container">
+            <div class="header__logo">
+              <img src="img/Logo.png" class="g" />
+            </div>
             <div class="hamburger-menu">
               <input id="menu__toggle" type="checkbox" />
-              <label class="menu__btn" for="menu__toggle">
-                <span></span>
+              <label class="menu-toggler" for="menu__toggle">
+                <span class="menu-toggler__line"></span>
               </label>
-              <ul class="menu__box">
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck"> Alivio</span></a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck">Solutions</span></a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck">Community</span></a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck">Pricing</span></a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck2">Sign in</span></a
-                  >
-                </li>
-                <li>
-                  <a class="menu__item" href="#"
-                    ><span сlass="text_linck3">Start Trial</span></a
-                  >
-                </li>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">Why Alivio</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Solutions</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Community</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li></ul>
+              <ul class="menu__list menu__list--autorization">
+                <li class="menu__item"><a class="menu__link" href="#">Sign in</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Start Trial</a></li>
               </ul>
-            </div>
-            <div class="header__logo">
-              <img src="img/Logo.png" />
-            </div>
-            <nav class="nav">
-              <ul class="nav_list">
-              <li class="nav_link"><a href="#">Why Alivio</a></li>
-              <li class="nav_link"><a href="#">Solutions</a></li>
-              <li class="nav_link"><a href="#">Community</a></li>
-              <li class="nav_link"><a href="#">Pricing</a></li>
-            </ul>
             </nav>
-            <nav class="nav_btn">
-              <ul class="nav_list">
-              <li class="btn_sign"><a href="#">Sign in</a></li>
-              <li class="btn_start"><a href="#">Start Trial</a></li>
-            </ul>
-            </nav>
+            </div>
           </div>
-        </div>
-        <hr>
+
+        
       </header>
-      <!-- main page -->
-      <main class="site">
+      <main class="main">
         <section class="section section--background">
-          <div class="page__container">
-            <div class="page__container_manage">
-              <h1 class="page__container_title">Be aware, Manage well.</h1>
-              <div class="page__container_text">
+          <div class="section__container">
+            <div class="section__container_manage">
+              <h1 class="section__title section__title--mod">Be aware, Manage well.</h1>
+              <div class="section__text">
                 Everyone experiences stress in different ways. Let Alivio guide
                 you, in a personalized journal experience, to overcome your
                 stress.
               </div>
-              <a href="" class="page__container_link">Find Your Way</a>
+              <a href="" class="section__link">Find Your Way</a>
             </div>
           </div>
         </section>
@@ -94,7 +57,7 @@
             <div class="about__container_manage">
               <div class="about__container_block">
                 <div class="about__container_works">How it works</div>
-                <h3 class="about__container_title">
+                <h3 class="section__title">
                   Understand & Release the stress in 3 steps
                 </h3>
               </div>
@@ -114,7 +77,7 @@
                   This way, we can fully personalize your journal!
                 </div>
                 <div class="card__img_bg1">
-                  <img src="img/card1.png" alt="" class="card__img1" />
+                  <img src="img/card1.png" alt="" class="card__img" />
                 </div>
               </div>
               <div class="card__container_second">
@@ -169,7 +132,7 @@
             <div class="product__content">
               <div class="product__content_block">
                 <div class="product__content_head">Our product</div>
-                <h3 class="product__content_title">
+                <h3 class="section__title">
                   You tell us your stress, We make your diary
                 </h3>
               <div class="product__content_text">
