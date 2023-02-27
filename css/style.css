@@ -52,29 +52,27 @@ header {
 }
 /* ******************************nav****************************** */
 .nav,
-.nav1 {
+.nav_btn {
   font-family: "Lato";
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
 }
-.nav1 {
-  font-weight: 400;
-}
 .nav_link{
-  display: inline;
   font-weight: 500;
   margin:0 10px;
   
 }
 .nav_list{
   width: 100%;
+  font-weight: 500;
+  margin:0 10px;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
-.btn_sign,.btn_start{
-  display: inline;
+.nav_btn{
+  font-weight: 400;
 }
 /* ******************************main****************************** */
 main {
@@ -84,8 +82,8 @@ main {
 .wrapper {
   overflow-x: hidden;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 /* ******************************section****************************** */
 .section{
@@ -561,13 +559,13 @@ margin-bottom: 10px;
     max-width: 567px;
     width: 100%;
   }
-  .nav1 {
+  .nav_btn {
     max-width: 277px;
     width: 100%;
     right: 0;
   }
   .nav,
-  .nav1 {
+  .nav_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -616,7 +614,7 @@ margin-bottom: 10px;
   }
 
   .nav,
-  .nav1 {
+  .nav_btn {
     display: none;
   }
   .header {
