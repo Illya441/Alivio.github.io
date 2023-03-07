@@ -17,6 +17,10 @@ body {
   font-size: 20px;
   line-height: 1;
 }
+img {
+  width: 100%;
+  display: block;
+}
 /* ******************************header****************************** */
 header {
   height: 85px;
@@ -77,7 +81,21 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 229px 68px 176px 68px;
-} 
+}
+.section:nth-child(4) .container{
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 0;
+}
+.footer .container{
+  margin: 0 68px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  padding: 0 10px;
+}
 /* ******************************container__manage****************************** */
 
 .section--background .container__manage {
@@ -107,7 +125,19 @@ header {
   max-height: 516px;
   height: auto;
 }
-
+.section:nth-child(4) .container__manage:nth-child(1){
+  width: 100%;
+  max-width: 699px;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(11, 1fr);
+  padding: 0 5%;
+}
+.section:nth-child(4) .container__manage:nth-child(2){
+  max-width: 584px;
+  width: 100%;
+  margin: 0 5%;
+}
 /* ******************************title****************************** */
 .title{
   font-family: "Georgia";
@@ -206,10 +236,18 @@ header {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 38px;
+
+  line-height: 157%;
   color: #424242;
 }
+.section--margin .title_text{
+  font-size: 24px;
+}
+.section:nth-child(4) .title_text{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 /* ******************************container__card****************************** */
 .container__card{
   max-width: 390px;
@@ -271,84 +309,22 @@ header {
   top: -45px;
   left: -124px;
 }
-/* ******************************card_img****************************** */
+/* ******************************img****************************** */
 .card_img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
-/* ******************************about__container****************************** */
-/* ******************************about__container****************************** */
-/* ******************************about__container****************************** */
-
-/* __________________________________________________________________________ */
-
-/* ******************************about__container****************************** */
-
-/* ******************************cards__container_manage****************************** */
-/* ******************************page__third****************************** */
-.story__container_title {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 157%;
-  /* or 79px */
-  color: #ffffff;
-}
-
-
-/* ******************************page__four****************************** */
-
-.product__container {
-  width: 100%;
-  max-width: 1507px;
-  display: flex;
-  justify-content: space-between;
-  margin: 120px 0;
-}
-
-/* // Relevant styles */
-.img__product_content {
-  width: 100%;
-  max-width: 699px;
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(11, 1fr);
-  padding: 0 5%;
-}
-
-.img__product_firs {
+.product_img:nth-child(1){
   grid-column: 2 / -1;
   grid-row: 1;
 }
-
-.img__product_second {
+.product_img:nth-child(2){
   grid-row: 1;
   grid-column: 1 / span 5;
   padding-top: 105%;
   z-index: 1;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-/* ******************************product__content****************************** */
-.product__content {
-  max-width: 584px;
-  width: 100%;
-  padding: 0 5%;
-}
-.product__content_head{
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 600;
-font-size: 25px;
-line-height: 157%;
-color: #424242;
-margin-bottom: 10px;
 }
 /* ******************************footer****************************** */
 .footer {
@@ -357,14 +333,13 @@ margin-bottom: 10px;
   max-height: 654px;
   height: 100%;
   justify-content: center;
-
 }
 .footer__logo {
   max-width: 105px;
   width: 100%;
   height: auto;
 }
-.foote__conten_list {
+.footer__item {
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -372,18 +347,7 @@ margin-bottom: 10px;
   line-height: 30px;
   color: #ffffff;
 }
-.footer__container {
-  max-width: 1507px;
-  width: 100%;
-  margin: 0 68px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 60px;
-  padding: 0 10px;
-}
-.footer__ul_content{
+.footer__list{
   display: flex;
   flex-direction: column;
   row-gap: 60px;
@@ -393,7 +357,7 @@ margin-bottom: 10px;
 .link:hover,
 .story__container_link:hover,
 .product__content_btn:hover,
-.foote__conten_list:hover
+.footer__item:hover
  {
   color:#32CD32;
 }
@@ -402,7 +366,7 @@ margin-bottom: 10px;
 .link:active,
 .story__container_link:active,
 .product__content_btn:active,
-.foote__conten_list:active
+.footer__item:active
  {
   color:#4beae2;
 }
@@ -467,13 +431,11 @@ margin-bottom: 10px;
     margin:0 10px;
   }
   .section--background {
-    
     background: url("../img/bg4.png") center/cover no-repeat;
   }
 }
 /* ******************************media__max****************************** */
 @media(max-width: 1139px) {
-
   .header {
     position: fixed;
     z-index: 30;
@@ -534,7 +496,7 @@ margin-bottom: 10px;
   .section--forbidden-forest .link{
     margin-bottom: 50px;
   }
-  .product__container{
+  .section:nth-child(4) .container{
       flex-direction: column;
       justify-content: center;
       align-items: center;
