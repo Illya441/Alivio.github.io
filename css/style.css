@@ -21,6 +21,7 @@ img {
   width: 100%;
   display: block;
 }
+
 /* ******************************header****************************** */
 header {
   height: 85px;
@@ -32,8 +33,6 @@ header {
   border-bottom: 1px solid rgba(141,132,132,0.57);
 }
 .header__container {
-  max-width: 1507px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +47,8 @@ header {
 }
 /* ******************************wrapper****************************** */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   min-height: 100%;
 }
@@ -72,6 +73,8 @@ header {
 .container {
   max-width: 1507px;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .section--background .container{
   display: flex;
@@ -80,7 +83,7 @@ header {
 .section--forbidden-forest .container{
   display: flex;
   justify-content: space-between;
-  margin: 229px 68px 176px 68px;
+  margin: 229px 0 176px 0;
 }
 .section:nth-child(4) .container{
   display: flex;
@@ -117,7 +120,7 @@ header {
   width: 100%;
   flex-direction: column;
   display: flex;
-  margin-top: 81px;
+  margin: auto 0;
 }
 .section--forbidden-forest .container__manage:nth-child(2){
   max-width: 895px;
@@ -186,20 +189,11 @@ header {
   font-weight: 400;
   margin-bottom: 40px;
 }
-.text--a,
-.text--b,
-.text--c{
+.text_mod{
   font-weight: 500;
+  margin-bottom: 50px;
 }
-.text--a{
-  margin-bottom: 60px;
-}
-.text--b{
-  margin-bottom: 37px;
-}
-.text--c{
-  margin-bottom: 48px;
-}
+
 .section--forbidden-forest .text{
   font-weight: 600;
   font-size: 25px;
@@ -266,7 +260,6 @@ header {
 }
 /* ******************************card_head****************************** */
 .card_head {
-  position: relative;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
@@ -274,53 +267,36 @@ header {
   line-height: 150%;
   text-align: center;
   color: #000000;
-}
-.card_head--a{
-  max-width: 181px;
   margin-bottom: 55px;
+  margin-right: auto;
 }
-.card_head--b{
-  max-width: 313px;
-  margin-bottom: 55px;
-}
-.card_head--c{
-  max-width: 105px;
-  margin-bottom: 45px;
-}
+
 .card_head::before {
   counter-increment: section;
   content: "0" counter(section) "";
-  position: absolute;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 150px;
+  line-height: 50%;
   color: rgba(1, 153, 109, 0.2);
+  margin-right: -60px;
 }
-.card_head--a::before{
-  top: -45px;
-  left: -88px;
-}
-.card_head--b::before{
-  top: -45px;
-  left: -79px;
-}
-.card_head--c::before{
-  top: -45px;
-  left: -124px;
+.container__card:nth-child(2) .card_head::before{
+  margin-right: -99px;
 }
 /* ******************************img****************************** */
 .card_img{
   width: 100%;
-  height: 100%;
+  height: 492px;
   object-fit: cover;
   border-radius: 12px;
 }
-.product_img:nth-child(1){
+.product_img__primary{
   grid-column: 2 / -1;
   grid-row: 1;
 }
-.product_img:nth-child(2){
+.product_img__secondary{
   grid-row: 1;
   grid-column: 1 / span 5;
   padding-top: 105%;
@@ -383,12 +359,6 @@ header {
     color: white;
     padding: 0 48px;
   }
-  .header__container {
-    margin: 0 68px;
-  }
-  .container {
-    margin: 0 68px;
-  }
   .hamburger-menu{
     max-width: 1117px;
     width: 100%;
@@ -428,8 +398,7 @@ header {
   }
   .menu__link{
     font-weight: 500;
-    margin:0 10px;
-  }
+    margin:0 10px; }
   .section--background {
     background: url("../img/bg4.png") center/cover no-repeat;
   }
@@ -444,9 +413,6 @@ header {
     margin-top: 85px;
     background: url("../img/bg4.png") center/cover no-repeat;
   }
-  .header__container,.container {
-    margin: 0 68px;
-  }
   .section--margin .container_manage {
     padding: 0 25px 0 25px;
   }
@@ -454,10 +420,6 @@ header {
 @media (max-width: 900px) {
   .header__container {
     margin: 0 32px;
-  }
-  .container {
-    margin: 0 0;
-    padding: 0 5%;
   }
   .section--background {
     background: url("../img/bg5.png") center/cover no-repeat;
@@ -491,7 +453,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 25px 50px 25px ;
+    margin: 0 0 50px 0 ;
   }
   .section--forbidden-forest .link{
     margin-bottom: 50px;
@@ -500,5 +462,10 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+  }
+}
+@media (min-width: 768px){
+  .container{
+    padding: 0 68px;
   }
 }
