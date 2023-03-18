@@ -101,7 +101,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.how-it-work__content-card{
+.how-it-work__content-cards{
   margin-top: 208px;
 }
 .section--forbidden-forest .container__manage:nth-child(1){
@@ -178,7 +178,7 @@ header {
   font-weight: 400;
   margin-bottom: 40px;
 }
-.text_mod{
+.text__card{
   font-weight: 500;
   margin-bottom: 50px;
 }
@@ -230,33 +230,33 @@ header {
   margin-bottom: 10px;
 }
 
-/* ******************************container__card****************************** */
-.container__card{
+/* ******************************how-it-work__block_cards****************************** */
+.how-it-work__block_cards{
   max-width: 390px;
   width: 100%;
 }
-.container__card:nth-child(2){
+.how-it-work__block_cards:nth-child(2){
   margin-top: 287px;
   margin-left: 50px;
   margin-right: 50px;
 }
-.container__card:nth-child(3){
+.how-it-work__block_cards:nth-child(3){
   margin-top: 53px;
 }
-/* ******************************card_head****************************** */
-.card_head {
+/* ******************************how-it-work__title_cards****************************** */
+.how-it-work__title_cards {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 150%;
-  font-text-align: center;
+  text-align: center;
   color: #000000;
   margin-bottom: 55px;
   margin-right: auto;
 }
 
-.card_head::before {
+.how-it-work__title_cards::before {
   counter-increment: section;
   content: "0" counter(section) "";
   font-family: "Georgia";
@@ -267,7 +267,7 @@ header {
   color: rgba(1, 153, 109, 0.2);
   margin-right: -60px;
 }
-.container__card:nth-child(2) .card_head::before{
+.how-it-work__block_cards:nth-child(2) .how-it-work__title_cards::before{
   margin-right: -99px;
 }
 /* ******************************img****************************** */
@@ -422,19 +422,19 @@ header {
   .how-it-work__text {
     margin: 0 0 0 0;
   }
-  .how-it-work__content-card {
+  .how-it-work__content-cards {
   padding: 0 10%;
 }
 }
 @media (max-width: 1300px) {
-  .how-it-work__content-card {
+  .how-it-work__content-cards {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
-  .container__card,
-  .container__card:nth-child(2),
-  .container__card:nth-child(3) {
+  .how-it-work__block_cards,
+  .how-it-work__block_cards:nth-child(2),
+  .how-it-work__block_cards:nth-child(3) {
     margin-top: 150px;
   }
   .section--forbidden-forest .container {
